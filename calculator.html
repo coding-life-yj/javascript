@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <form name="forms">
+        <input type="text" id="output" name="output" readonly />
+        <input type="button" class="clear" value="C" onclick="proc('C');" />
+        <input type="button" class="operator" value="/" onclick="proc('/');" />
+        <input type="button" value="1" onclick="proc('1');" />
+        <input type="button" value="2" onclick="proc('2');" />
+        <input type="button" value="3" onclick="proc('3');" />
+        <input type="button" class="operator" value="*" onclick="proc('*');" />
+        <input type="button" value="4" onclick="proc('4');" />
+        <input type="button" value="5" onclick="proc('5');" />
+        <input type="button" value="6" onclick="proc('6');" />
+        <input type="button" class="operator" value="+" onclick="proc('+');" />
+        <input type="button" value="7" onclick="proc('7');" />
+        <input type="button" value="8" onclick="proc('8');" />
+        <input type="button" value="9" onclick="proc('9');" />
+        <input type="button" class="operator" value="-" onclick="proc('-');" />
+        <input type="button" class="dot" value="." onclick="proc('.');" />
+        <input type="button" value="0" onclick="proc('0');" />
+        <input
+          type="button"
+          class="operator result"
+          value="="
+          onclick="proc('=');"
+        />
+      </form>
+    </div>
+    <script src="cal.js"></script>
+  </body>
+</html>
